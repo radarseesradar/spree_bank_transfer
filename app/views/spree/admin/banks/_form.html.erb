@@ -14,6 +14,12 @@
         <%= f.text_field :account_no, :class => 'fullwidth' %>
       <% end %>
       
+      <%= f.field_container :instructions do %>
+        <%= f.label :instructions, Spree.t(:instructions) %> <span class="required">*</span><br />
+        <%= f.error_message_on :instructions, :class => 'fullwidth title' %>
+        <%= f.text_area :instructions, :class => 'fullwidth' %>
+      <% end %>
+
       <%= f.field_container :active do %>
         <%= f.check_box :active %>
         <%= f.label :active, Spree.t(:active) %>
