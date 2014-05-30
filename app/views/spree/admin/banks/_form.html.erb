@@ -9,11 +9,6 @@
         <%= f.text_field :name, :class => 'fullwidth' %>
       <% end %>
 
-      <%= f.field_container :account_no do %>
-        <%= f.label :account_no, Spree.t(:account_no) %><span class="required">*</span><br />
-        <%= f.text_field :account_no, :class => 'fullwidth' %>
-      <% end %>
-      
       <%= f.field_container :instructions do %>
         <%= f.label :instructions, Spree.t(:instructions) %> <span class="required">*</span><br />
         <%= f.error_message_on :instructions, :class => 'fullwidth title' %>
